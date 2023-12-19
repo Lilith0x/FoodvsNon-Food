@@ -44,7 +44,7 @@ def main(repo_path):
     test_path = data_path / "validation"
     train_files, train_labels = get_files_and_labels(train_path)
     test_files, test_labels = get_files_and_labels(test_path)
-    prepared = repo_path / "FoodvsNon-Food/data/prepared"
+    prepared = repo_path / "data/prepared"
     save_as_csv(train_files, train_labels, prepared / "train.csv")
     save_as_csv(test_files, test_labels, prepared / "test.csv")
 
