@@ -39,7 +39,7 @@ def main(repo_path):
     Имена файлов и соответствующие им метки сохраняются
     как два csv-файла в папке data/prepare/: train.csv
     и test.csv."""
-    data_path = repo_path / "dataorgFNF"
+    data_path = repo_path / "raw"
     train_path = data_path / "training"
     test_path = data_path / "validation"
     train_files, train_labels = get_files_and_labels(train_path)
@@ -49,6 +49,6 @@ def main(repo_path):
     save_as_csv(test_files, test_labels, prepared / "test.csv")
 
 if __name__ == "__main__":
-    repo_path = Path(__file__).parent.parent.parent
+    repo_path = Path(__file__).parent.parent
     # print(repo_path / '2')
     main(repo_path)
