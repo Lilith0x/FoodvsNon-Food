@@ -39,9 +39,9 @@ def main(repo_path):
     Имена файлов и соответствующие им метки сохраняются
     как два csv-файла в папке data/prepare/: train.csv
     и test.csv."""
-    data_path = repo_path / "raw"
-    train_path = data_path / "training"
-    test_path = data_path / "validation"
+    data_path = repo_path / "data"
+    train_path = data_path / "raw/training"
+    test_path = data_path / "raw/validation"
     train_files, train_labels = get_files_and_labels(train_path)
     test_files, test_labels = get_files_and_labels(test_path)
     prepared = repo_path / "data/prepared"
