@@ -1,0 +1,4 @@
+[core]
+    remote = remote_data_fnf
+['remote "remote_data_fnf"']
+    url = ../../dataremoteFNF
